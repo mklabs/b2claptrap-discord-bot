@@ -24,12 +24,24 @@ Make sure to have latest node / npm from https://nodejs.org/en/ (current version
         npm install
         node app.js
 
-Then, you need to download
-[B2ClaptrapRingstones](https://majornelson.com/2012/11/21/borderlands-2-claptrap-sounds/).
-Unzip it at the root of the repository in the `B2ClaptrapRingstones` directory.
-MP3s needs to be right along `B2ClaptrapRingstones/index.js` file.
+`TODO: prism-media/src/transcoder/ffmpeg replace .ffmpegPath();` Meanwhile, you
+can install ffmpeg manually with (example on Ubuntu) `sudo apt-get install
+ffmpeg`.
 
-TODO: prism-media/src/transcoder/ffmpeg replace .ffmpegPath();
+Then you need to create a discord application using
+https://discordapp.com/developers/applications/ and it to your server. You can
+check [this wiki page from
+jagrosh/MusicBot](https://github.com/jagrosh/MusicBot/wiki/Adding-Your-Bot-To-Your-Server)
+for further details on how to set it up.
+
+Once you got your application token, you need to create a `./config.json` file
+with something like:
+
+```js
+{
+  "token"  : "YourToken"
+}
+```
 
 ## Commands
 
